@@ -81,12 +81,12 @@ def get_vector_store(docs):
 
 def get_deepseek_llm():
     chat_model = os.getenv("CHAT_MODEL_deepseek")
-    llm = ChatBedrockConverse(model_id=chat_model, region_name=region, max_tokens=50)
+    llm = ChatBedrockConverse(model_id=chat_model, region_name=region, max_tokens=200)
     return llm
 
 def get_llama2_llm():
     chat_model = os.getenv("CHAT_MODEL_llama3")
-    llm = ChatBedrockConverse(model_id=chat_model, region_name=region, max_tokens=50)
+    llm = ChatBedrockConverse(model_id=chat_model, region_name=region, max_tokens=200)
     return llm
 
 
@@ -94,7 +94,7 @@ def get_llama2_llm():
 def uplode_file():
     if not os.path.exists("Media"):
         os.mkdir("Media")
-        
+
     uploaded_file = st.file_uploader("Choose a file", type="pdf")
     if uploaded_file is not None:
         # To read file as bytes:
