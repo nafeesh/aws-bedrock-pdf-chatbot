@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+faiss_index/index.faiss
+faiss_index/index.pkl
+Notebook/test.ipynb
+Media/operating system.pdf
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+ENV/
+
+# Streamlit / logs
+.streamlit/
+logs/
+
+# Data
+Media/
+faiss_index/
+*.pdf
+
+# Credentials
+.env
